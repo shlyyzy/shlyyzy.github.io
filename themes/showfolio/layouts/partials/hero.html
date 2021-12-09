@@ -1,8 +1,8 @@
 <section class="p-4 flex flex-col items-center">
   {{ $authorName := .Site.Params.author }}
   {{ with .Site.Params.authorImage }}
-  <div class="w-48 h-50 rounded-full mb-6">
-    <img src="{{.}}" class="w-full p-2 h-full object-contain" style="border-radius:50%" alt="{{ $authorName }}" />
+  <div class="w-48 h-48 rounded-full mb-6 bg-red-100">
+    <img src="{{.}}" class="w-full p-2 h-full object-contain" alt="{{ $authorName }}" />
   </div>
   {{ end }}
 
@@ -29,18 +29,17 @@
     </div>
     <div class="relative">{{ .Site.Params.homepage.tagline }}</div>
   </div>
-  <br>
   <p class="font-light text-center max-w-sm mb-8">
     {{ .Site.Params.homepage.description }}
   </p>
 
-  <!-- {{ with .Site.Params.homepage.contact }}
+  {{ with .Site.Params.homepage.contact }}
   <a
     href="{{ . }}"
     rel="noopener noreferrer"
     target="_blank"
     class="px-6 py-4 rounded-full font-semibold text-lg bg-black text-white hover:bg-gray-800 transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
-    >Resume</a
+    >Talk to me</a
   >
-  {{ end }} -->
+  {{ end }}
 </section>
