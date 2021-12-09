@@ -1,0 +1,59 @@
+baseURL = "https://shlyyzy.github.io"
+languageCode = "en-us"
+title = "Shirley Yang"
+theme = "showfolio"
+
+[params]
+  name = "shlyyzy portfolio"
+  description = "Shirley Yang Portfolio"
+  author = "Shirley Yang"
+  authorEmail = "shirleyyzyang@gmail.com"
+  authorImage = "/featured.png"
+  autoDarkMode = true
+
+  copyright = "Copyright © 2021 - Shirley Yang · All rights reserved"
+  favicon = "favicon.ico"
+
+[params.homepage]
+  title = "Hey 👋"
+  tagline = "I'm Shirley!"
+  description = "Aspiring software engineer and CS student @ UBC 👩🏻‍💻"
+
+[[params.homepage.resume.courses]]
+  name = "Software Engineering (CPSC 310)"
+[[params.homepage.resume.courses]]
+  name = "Algorithm Design (CPSC 320)"
+[[params.homepage.resume.courses]]
+  name = "Relational Databases (CPSC 304)"
+[[params.homepage.resume.courses]]
+  name = "Operating Systems (CPSC 313)"
+[[params.homepage.resume.courses]]
+  name = "Functional Programming (CPSC 312)"
+[[params.homepage.resume.courses]]
+  name = "Mind & Machines (PHIL 250)"
+
+[[params.homepage.resume.work]]
+  name = "SAP"
+  role = "Software Developer Intern"
+  duration = "May 2021 - December 2021"
+
+[[params.homepage.resume.work]]
+  name = "Ericsson"
+  role = "5G/LTE Software Tools Developer Intern"
+  duration = "Jan 2020 - Aug 2020"
+
+[params.homepage.social]
+  linkedin = "https://linkedin.com/in/shirleyyzyang"
+  github = "https://github.com/shlyyzy"
+  spotify = "https://open.spotify.com/user/shly0103?si=b7df40a34ea64dc7"
+
+[build]
+  writeStats = true
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

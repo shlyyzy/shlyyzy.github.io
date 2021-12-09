@@ -1,2 +1,2 @@
 # shlyyzy.github.io
-personal website made with Jekyll
+personal website
